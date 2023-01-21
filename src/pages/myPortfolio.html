@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilya Kulesh CV</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="icon" href="../../src/img/favicon.png">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="import" href="../../index.html">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../../index.html" class="name">
+            <h2 class="fixed">Ilya Kulesh CV</h2>
+        </a>
+        <div class="container">
+            <nav class="dws-menu">
+                <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Menu</label>
+                <ul>
+                    <li><a href="../../index.html">Main</a></li>
+                    <li><a href="../../index.html#skills">Skills</a></li>
+                    <li><a href="../../index.html#personal-projects">Personal projects</a></li>
+                    <li><a href="../../index.html#education">Education</a></li>
+                    <li><a href="../../index.html#contact-me">Contact me</a></li>
+                    <li><a href="#">My portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="portfolio-container">
+        <h3>My portfolio</h3>
+        <div class="carousel">
+            <input id="pizza" type="radio" name="image-selector" checked="checked" />
+            <label for="wall">wall</label>
+            <img src="../img/pizza.png" alt="pizza">
+
+            <input id="mernBlog" type="radio" name="image-selector" />
+            <label for="pizza">pizza</label>
+            <img src="../img/mernBlog.png" alt="mernBlog">
+
+            <input id="wall" type="radio" name="image-selector" />
+            <label for="mernBlog">mernBlog</label>
+            <img src="../img/wall.png" alt="wall">
+
+            <label for="wall">wall</label>
+            <label for="pizza">pizza</label>
+        </div>
+    </main>
+</body>
+
+</html>

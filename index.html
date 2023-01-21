@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ilya Kulesh CV</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="icon" href="./src/img/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="import" href="./src/pages/myPortfolio.html">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="name">
+            <h2 class="fixed">Ilya Kulesh CV</h2>
+        </a>
+        <div class="container">
+            <nav class="dws-menu">
+                <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                <label for="menu" class="toggleMenu">Menu</label>
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#personal-projects">Personal projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
+                    <li><a href="./src/pages/myPortfolio.html">My portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="info">
+            <img src="./src/img/info.jpg" alt="avatar" class="avatar">
+            <div class="info-text">
+                <h1>Ilya Kulesh</h1>
+                <p>
+                    Passionate Frontend Developer with desire to work and grow in a collaborative team environment. I
+                    have a good interpersonal skills, I'm an excellent team worker and very willing to learn and develop
+                    new skills. I use a creative approach to solve the problems. Also I'm flexible in my working hours!
+                </p>
+                <h4>English level: B1</h4>
+                <h4>Contacts:</h4>
+                <a href="mailto:ilyakulesh457@gmail.com" target="_blank">ilyakulesh457@gmail.com</a>
+                |
+                <a href="https://linkedin.com/in/ilya-kulesh-046965248" target="_blank">LinkedIn</a>
+                |
+                <a href="https://github.com/ilyakulesh" target="_blank">GitHub</a>
+                </ul>
+            </div>
+        </div>
+        <section class="card">
+            <h2 class="anchor-skills" id="skills">Skills</h2>
+            <ul class="list">
+                <li>JavaScript, TypeScript, React, Redux</li>
+                <li>HTML, CSS, SASS, Material UI, Bootstrap</li>
+                <li>Git, GitHub, GitLab, Bitbucket</li>
+                <li>NodeJS, Express, JWT</li>
+                <li>MongoDB, SQL</li>
+                <li>Jest, React Testing Library</li>
+                <li>Webpack</li>
+                <li>Babel</li>
+                <li>Prettier, ESLint</li>
+            </ul>
+        </section>
+        <section class="card" id="personal-projects">
+            <h2 class="anchor-projects">Personal projects:</h2>
+            <div class="link-list">
+                <p id="pizza-shop"><strong>Pizza Shop</strong></p>
+                <a href="https://github.com/ilyakulesh/react-pizza-v2" target="_blank"><strong>src -
+                        github.com/ilyakulesh/react-pizza-v2</strong></a>
+                <ul class="list">
+                    <li>ReactJS 18</li>
+                    <li>TypeScript</li>
+                    <li>Redux Toolkit</li>
+                    <li>React Router v6</li>
+                    <li>Axios + Fetch</li>
+                    <li>React Hooks</li>
+                    <li>CSS-Modules / SCSS</li>
+                    <li>React Content Loader</li>
+                    <li>React Pagination</li>
+                    <li>Lodash.Debounce</li>
+                </ul>
+                <p id="mern-blog"><strong>Mern Blog</strong></p>
+                <a href="https://github.com/ilyakulesh/blog-mern" target="_blank"><strong>src -
+                        github.com/ilyakulesh/blog-mern</strong></a>
+                <ul class="list">
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>ReactJS 18</li>
+                    <li>NodeJS</li>
+                    <li>JSON Web Token</li>
+                    <li>React Router v6</li>
+                    <li>React Hooks</li>
+                    <li>Redux Toolkit</li>
+                    <li>Axios</li>
+                    <li>CSS-Modules / SCSS, MUI</li>
+                </ul>
+            </div>
+        </section>
+        <section class="card" id="education">
+            <h2>Education</h2>
+            <p>
+                Belarusian State Pedagogical University
+                <br />Institute of Psychology, Practical Psychologist
+                <br />Bachelor Degree | 2019 - 2023
+            </p>
+        </section>
+    </main>
+    <footer class="contact" id="contact-me">
+        <h2>Contact me</h2>
+        <form action="https://formspree.io/f/xbjelglg" method="POST">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Ivan Ivanov">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" placeholder="ivanivanov@mail.ru">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="text">Your message:</label>
+                <textarea name="text" id="text" cols="15" rows="2"></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Contact">
+        </form>
+    </footer>
+</body>
+
+</html>

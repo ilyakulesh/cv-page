@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background-color: #f2f2f2;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  max-width: 750px;
+  margin: auto;
+  padding: 15px 40px 100px 40px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("./src/img/bg.jpg") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: #d4d4d4;
+}
+
+.name:hover {
+  text-decoration: none;
+}
+
+.name:active {
+  color: none;
+}
+
+.avatar {
+  width: 280px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  filter: brightness(90%);
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text h4 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #d4d4d4;
+  margin: 0;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+
+  .info-text {
+    margin: auto;
+  }
+
+  .avatar {
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.anchor-skills::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 50px;
+  margin-top: -50px;
+}
+
+.anchor-projects:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 50px;
+  margin-top: -40px;
+}
+
+.list {
+  padding: 0px 20px;
+}
+
+.list li {
+  color: #fff;
+}
+
+.link-list p {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  padding: 15px 0px 10px;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row > .form-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+  margin-right: 0px;
+}
+
+.btn {
+  background: black;
+  opacity: 0.7;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  background-color: black;
+  opacity: 0.9;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.fixed {
+  color: #fff;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.dws-menu * {
+  margin: 0;
+  padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+  list-style: none;
+}
+
+.dws-menu > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.dws-menu > ul li a {
+  display: block;
+  padding: 15px 20px 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.dws-menu li a:hover {
+  color: #fff;
+  box-shadow: 1px 5px 10px -5px #d4d4d4;
+  transition: all 0.3s ease;
+}
+
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu {
+  display: none;
+}
+
+.dws-menu label.toggleMenu {
+  background: rgba(255, 255, 255, 0.15);
+  background-color: black;
+  display: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media all and (max-width: 940px) {
+  .dws-menu {
+    overflow: hidden;
+  }
+
+  .dws-menu ul {
+    display: block;
+    max-height: 0;
+    transition: max-height 0.3s;
+  }
+
+  .dws-menu label.toggleMenu {
+    display: block;
+    text-align: center;
+  }
+
+  input.toggleMenu:checked + label.toggleMenu {
+    color: #fff;
+    height: 30px;
+  }
+
+  input.toggleMenu:checked ~ ul,
+  input.toggleSubmenu:checked ~ ul {
+    display: block;
+    max-height: 5000px;
+    transition: max-height 2s ease-in;
+    background: black;
+  }
+
+  .dws-menu label.toggleSubmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+  }
+
+  input.toggleSubmenu:checked ~ a {
+    background: #454547;
+    color: #fff;
+  }
+}
+
+main section {
+  padding: 15px;
+  transition: opacity 124ms linear, transform 124ms linear;
+}
+
+main section:hover {
+  transform: scale(1.05);
+}
